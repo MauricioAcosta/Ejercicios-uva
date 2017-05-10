@@ -1,4 +1,4 @@
-
+from sys import stdin
 import math
 
 lprimos = [2,3,5,7,11,13,17,19,23,29,31]
@@ -59,11 +59,14 @@ def mcd(a,b):
             i+=1
     return mul
 
-while True:
-    (a,b) = map(int, input().split())
+#while True:
+lectura= stdin.read().splitlines()
+#(a,b) = map(int, input().split())
+for leer in lectura:
+    (a,b)=map(int,leer.split())
     if a == 0 and b == 0:
-        print()
         break
+
     la = descomponer(a)
     lb = descomponer(b)
 
