@@ -1,3 +1,4 @@
+from sys import stdin
 def logic(a,b):
     (N,k) = (2,0)
     if b == 1:
@@ -15,9 +16,9 @@ def logic(a,b):
         else:
             N += 1
     return (N,k)
-
-while True:
-    (a,b) = map(int, input().split())
+lectura=stdin.read().splitlines()
+for leer in lectura:
+    (a,b) = map(int, leer.split())
     if a == 0 and b == 0:
         break
     (N,k) = logic(a,b)
