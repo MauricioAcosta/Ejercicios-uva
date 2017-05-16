@@ -2,11 +2,8 @@
 #include <math.h>
 using namespace std;
 int main(){
-    double n, p, k;
+    double n, p;
     cin>>n;
     cin>>p;
-    k=pow(p, (1/n));
-    cout<<k;
+    cout<<pow(p,(1/n));
 }
-
-
