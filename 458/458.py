@@ -5,6 +5,6 @@ while True:
         break
     cadena=' '.join(lectura)
     newcadena=[]
-    for i in range(len(cadena)):
-        newcadena.append(chr(ord(cadena[i])-7))
+    for caracter in cadena:
+        newcadena.append(chr(ord(caracter)-7))
     print ("".join(newcadena))
