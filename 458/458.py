@@ -1,10 +1,13 @@
 from sys import stdin
+
 while True:
-    lectura=stdin.readline().split()
-    if not lectura:
+    lines = stdin.readline().split()
+    if not lines:
         break
-    cadena=' '.join(lectura)
-    newcadena=[]
-    for caracter in cadena:
-        newcadena.append(chr(ord(caracter)-7))
-    print ("".join(newcadena))
+    for line in lines:
+        for letter in line:
+            d = ord(letter)
+            print("%c"%(d-7), end="")
+            if not letter:
+                exit()
+        print()
