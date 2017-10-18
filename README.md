@@ -1,1 +1,3 @@
-# Ejercicios-uva
+# Programación Competitiva
+
+Ejercicios.
