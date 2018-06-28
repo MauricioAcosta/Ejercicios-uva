@@ -1,3 +1,4 @@
+#Brute force, math
 from sys import stdin
 
 watermelokg= int(stdin.readline());
