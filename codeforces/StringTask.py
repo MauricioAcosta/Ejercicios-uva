@@ -1,3 +1,4 @@
+#Implementation, strings
 from sys import stdin
 
 palabra=stdin.readline()
